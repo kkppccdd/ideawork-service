@@ -25,7 +25,7 @@ var scs = require('scs-sdk');
  */
 var SCS_ACCESS_KEY = process.env.SCS_ACCESS_KEY;
 var SCS_SECRET_KEY = process.env.SCS_SECRET_KEY;
-var SCS_BUCKET = process.env.SCS_BUCKET
+var SCS_BUCKET = process.env.SCS_BUCKET;
 
 var scsConfig = new scs.Config({
 	accessKeyId : SCS_ACCESS_KEY,
@@ -89,7 +89,7 @@ module.exports = (function() {
 				images.forEach(function(image){
 					//console.log(image.Key);
 					// check if existed on db
-					var criteria ={};
+					var criteria ={key:image.Key};
 					db.collection('material').find(criteria).toArray(function(err, items) {
 						  assert.ok(err == null);
 						  if(items.length == 0){
