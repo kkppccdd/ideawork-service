@@ -13,7 +13,8 @@ var multer = require('multer');
 var mongoskin = require('mongoskin');
 var mongo = require("mongodb");
 
-
+// load APM newRelic agent
+var newrelic = require('newrelic');
 
 // load mongodb url
 var mongodbUrl = process.env.MONGOHQ_URL;
