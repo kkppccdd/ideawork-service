@@ -13,6 +13,9 @@ var materialViewApp = angular.module('materialViewApp',
 		[ "ngRoute",'materialServices' ]);
 
 materialViewApp.controller('materialListCtrl', function($scope, Material) {
+	
+	// set default materials, avoiding a long time blank
+	$scope.materials= JSON.parse('[{"_id":"55ebe197a2522a0300008bcb","bucket":"ideawork-material","key":"cartoon-girl/--------------_022.png","lastModifiedTime":"2015-09-06T06:47:51.370Z","tags":["卡通","女孩","韩国"]},{"_id":"55ebe197a2522a0300008bd0","bucket":"ideawork-material","key":"cartoon-girl/--------------_047.png","lastModifiedTime":"2015-09-06T06:47:51.373Z","tags":["卡通","女孩","韩国"]},{"_id":"55ebe197a2522a0300008bd5","bucket":"ideawork-material","key":"cartoon-girl/--------------_018.png","lastModifiedTime":"2015-09-06T06:47:51.375Z","tags":["卡通","女孩","韩国"]},{"_id":"55ebe197a2522a0300008bda","bucket":"ideawork-material","key":"cartoon-girl/--------------_043.png","lastModifiedTime":"2015-09-06T06:47:51.377Z","tags":["卡通","女孩","韩国"]},{"_id":"55ebe197a2522a0300008bdf","bucket":"ideawork-material","key":"cartoon-girl/--------------_015.png","lastModifiedTime":"2015-09-06T06:47:51.379Z","tags":["卡通","女孩","韩国"]},{"_id":"55ebe197a2522a0300008be4","bucket":"ideawork-material","key":"cartoon-girl/--------------_040.png","lastModifiedTime":"2015-09-06T06:47:51.381Z","tags":["卡通","女孩","韩国"]}]');
 
 	$scope.getQueryVariable=function(variable) {
 	    var query = window.location.search.substring(1);
