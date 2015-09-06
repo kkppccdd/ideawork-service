@@ -1,0 +1,13 @@
+node_modules
+tmp
+.settings
+.jshintrc
+.project
+.tern-project
+npm-debug.log
+node_modules
+tmp
+.project
+.jshintrc
+.tern-project
+npm-debug.log

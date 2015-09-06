@@ -1,0 +1,22 @@
+{
+	"name": "ideawork-gallery",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": 
+	{
+		"start": "node app.js"
+	},
+
+	"dependencies": 
+	{
+		"express": "~4.13.x",
+		"jade": "*",
+		"multer": "0.1.6",
+		"morgan": "~1.0.0",
+		"cookie-parser": "~1.0.1",
+		"body-parser": "~1.0.0",
+		"mongodb": "1.4.26",
+		"mongoskin": "1.4.4",
+		"scs-sdk":"*"
+	}
+}

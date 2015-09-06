@@ -1,0 +1,117 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-verbose',
+1 verbose cli   '--registry',
+1 verbose cli   'http://registry.npmjs.org.au/' ]
+2 info using npm@2.0.2
+3 info using node@v0.10.31
+4 verbose readDependencies using package.json deps
+5 verbose install where, deps [ '/Users/kkppccdd/workspace/ideawork_workspace/ideawork-gallery',
+5 verbose install   [ 'express',
+5 verbose install     'jade',
+5 verbose install     'multer',
+5 verbose install     'morgan',
+5 verbose install     'cookie-parser',
+5 verbose install     'body-parser',
+5 verbose install     'mongodb',
+5 verbose install     'mongoskin',
+5 verbose install     'scs-sdk' ] ]
+6 info preinstall ideawork-gallery@0.0.1
+7 verbose readDependencies using package.json deps
+8 verbose already installed skipping cookie-parser@~1.0.1 /Users/kkppccdd/workspace/ideawork_workspace/ideawork-gallery
+9 verbose already installed skipping body-parser@~1.0.0 /Users/kkppccdd/workspace/ideawork_workspace/ideawork-gallery
+10 verbose already installed skipping mongodb@1.4.26 /Users/kkppccdd/workspace/ideawork_workspace/ideawork-gallery
+11 verbose already installed skipping mongoskin@1.4.4 /Users/kkppccdd/workspace/ideawork_workspace/ideawork-gallery
+12 verbose already installed skipping scs-sdk@* /Users/kkppccdd/workspace/ideawork_workspace/ideawork-gallery
+13 verbose cache add [ 'express@~4.13.x', null ]
+14 verbose cache add spec="express@~4.13.x" args=["express@~4.13.x",null]
+15 verbose parsed spec { raw: 'express@~4.13.x',
+15 verbose parsed spec   scope: null,
+15 verbose parsed spec   name: 'express',
+15 verbose parsed spec   rawSpec: '~4.13.x',
+15 verbose parsed spec   spec: '>=4.13.0 <4.14.0',
+15 verbose parsed spec   type: 'range' }
+16 verbose already installed skipping jade@* /Users/kkppccdd/workspace/ideawork_workspace/ideawork-gallery
+17 verbose already installed skipping multer@0.1.6 /Users/kkppccdd/workspace/ideawork_workspace/ideawork-gallery
+18 verbose already installed skipping morgan@~1.0.0 /Users/kkppccdd/workspace/ideawork_workspace/ideawork-gallery
+19 verbose parsed spec { raw: 'express@~4.13.x',
+19 verbose parsed spec   scope: null,
+19 verbose parsed spec   name: 'express',
+19 verbose parsed spec   rawSpec: '~4.13.x',
+19 verbose parsed spec   spec: '>=4.13.0 <4.14.0',
+19 verbose parsed spec   type: 'range' }
+20 verbose addNamed [ 'express', '>=4.13.0 <4.14.0' ]
+21 verbose addNamed [ null, '>=4.13.0 <4.14.0' ]
+22 silly lockFile 1a3e195f-express-4-13-0-4-14-0 express@>=4.13.0 <4.14.0
+23 verbose lock express@>=4.13.0 <4.14.0 /Users/kkppccdd/.npm/1a3e195f-express-4-13-0-4-14-0.lock
+24 silly addNameRange { name: 'express', range: '>=4.13.0 <4.14.0', hasData: false }
+25 verbose mapToRegistry name express
+26 verbose mapToRegistry uri http://registry.npmjs.org.au/express
+27 verbose request on initialization, where is /express
+28 verbose request after pass 1, where is /express
+29 verbose request url raw /express
+30 verbose request resolving registry [ 'http://registry.npmjs.org.au/', './express' ]
+31 verbose request after pass 2, where is http://registry.npmjs.org.au/express
+32 verbose request no auth needed
+33 info attempt registry request try #1 at 22:15:08
+34 verbose request id ef124aeb629a1de8
+35 http request GET http://registry.npmjs.org.au/express
+36 http 404 http://registry.npmjs.org.au/express
+37 verbose bad json <html>
+37 verbose bad json <head><title>404 Not Found</title></head>
+37 verbose bad json <body bgcolor="white">
+37 verbose bad json <center><h1>404 Not Found</h1></center>
+37 verbose bad json <hr><center>nginx/1.4.6 (Ubuntu)</center>
+37 verbose bad json </body>
+37 verbose bad json </html>
+38 error registry error parsing json
+39 verbose headers { server: 'nginx/1.4.6 (Ubuntu)',
+39 verbose headers   date: 'Sat, 05 Sep 2015 14:15:03 GMT',
+39 verbose headers   'content-type': 'text/html; charset=utf-8',
+39 verbose headers   'transfer-encoding': 'chunked',
+39 verbose headers   connection: 'keep-alive',
+39 verbose headers   'content-encoding': 'gzip' }
+40 silly registry.get cb [ 404,
+40 silly registry.get   { server: 'nginx/1.4.6 (Ubuntu)',
+40 silly registry.get     date: 'Sat, 05 Sep 2015 14:15:03 GMT',
+40 silly registry.get     'content-type': 'text/html; charset=utf-8',
+40 silly registry.get     'transfer-encoding': 'chunked',
+40 silly registry.get     connection: 'keep-alive',
+40 silly registry.get     'content-encoding': 'gzip' } ]
+41 silly lockFile 1a3e195f-express-4-13-0-4-14-0 express@>=4.13.0 <4.14.0
+42 silly lockFile 1a3e195f-express-4-13-0-4-14-0 express@>=4.13.0 <4.14.0
+43 verbose type unexpected_token
+44 verbose stack SyntaxError: Unexpected token <
+44 verbose stack <html>
+44 verbose stack <head><title>404 Not Found</title></head>
+44 verbose stack <body bgcolor="white">
+44 verbose stack <center><h1>404 Not Found</h1></center>
+44 verbose stack <hr><center>nginx/1.4.6 (Ubuntu)</center>
+44 verbose stack </body>
+44 verbose stack </html>
+44 verbose stack
+44 verbose stack     at Object.parse (native)
+44 verbose stack     at RegClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:225:23)
+44 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:202:7
+44 verbose stack     at Gunzip.onEnd (zlib.js:166:5)
+44 verbose stack     at Gunzip.emit (events.js:117:20)
+44 verbose stack     at _stream_readable.js:943:16
+44 verbose stack     at process._tickCallback (node.js:419:13)
+45 verbose cwd /Users/kkppccdd/workspace/ideawork_workspace/ideawork-gallery
+46 error Darwin 14.5.0
+47 error argv "node" "/usr/local/bin/npm" "install" "-verbose" "--registry" "http://registry.npmjs.org.au/"
+48 error node v0.10.31
+49 error npm  v2.0.2
+50 error Unexpected token <
+50 error <html>
+50 error <head><title>404 Not Found</title></head>
+50 error <body bgcolor="white">
+50 error <center><h1>404 Not Found</h1></center>
+50 error <hr><center>nginx/1.4.6 (Ubuntu)</center>
+50 error </body>
+50 error </html>
+51 error If you need help, you may report this error at:
+51 error     <http://github.com/npm/npm/issues>
+52 verbose exit [ 1, true ]
