@@ -26,6 +26,13 @@ materialViewApp.controller('materialListCtrl', function($scope, Material) {
 	    console.log('Query variable %s not found', variable);
 	};
 	
+	$scope.useMaterial=function(material){
+		console.log(material.key);
+		var functionName='useMaterial';
+		var arg = 'http://cdn.sinacloud.net/'+material.bucket+'/'+material.key;
+		NativeBridge.call(functionName,arg);
+	};
+	
 	$scope.refreshMaterialList = function() {
 		var tag = $scope.getQueryVariable('tag');
 
