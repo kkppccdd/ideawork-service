@@ -2,7 +2,7 @@
  * Module dependencies.
  */
 // load APM newRelic agent
-var newrelic = require('./newrelic');
+var newrelic = require('newrelic');
 
 var assert = require("assert");
 
